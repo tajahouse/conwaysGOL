@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Grid from './components/Grid';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      generation:0
+    }
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>Welcome to Conway's Game of Life. Enjoy the Science Before You</h1>
+        <Grid
+        />
+  
+      </div>
+    );
+  }
 }
 
 export default App;

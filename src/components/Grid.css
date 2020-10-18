@@ -1,0 +1,24 @@
+.box{
+    display: inline-block;
+    border: 1px solid #f5350c;
+    width: 15px;
+    height: 15px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+.off{
+    background-color: #625a59
+}
+.on{
+    background-color: #0E2415
+}
+
+.box:hover{
+    background: #73EE9A
+}
+
+.center{
+    margin:auto;
+    display: table
+}
